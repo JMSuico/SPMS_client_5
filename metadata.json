@@ -1,0 +1,5 @@
+{
+  "name": "Copy of SPMS - Student Performance Monitoring System",
+  "description": "A comprehensive dashboard for monitoring student academic performance, attendance, and grades with role-based access for Admins, Teachers, and Students.",
+  "requestFramePermissions": []
+}

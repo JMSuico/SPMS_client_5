@@ -1,0 +1,104 @@
+================================================================================
+STUDENT PERFORMANCE MONITORING SYSTEM (SPMS) - SETUP & RUN INSTRUCTIONS
+================================================================================
+
+1. PREREQUISITES
+--------------------------------------------------------------------------------
+Before you begin, ensure you have the following software installed on your computer:
+
+   A. Node.js (Version 16 or higher)
+      - Download: https://nodejs.org/
+      - Verify installation by running: node -v
+
+   B. npm (Node Package Manager)
+      - This comes automatically with Node.js.
+      - Verify installation by running: npm -v
+
+   C. A Code Editor (Optional but recommended)
+      - VS Code: https://code.visualstudio.com/
+
+
+2. INSTALLATION STEPS
+--------------------------------------------------------------------------------
+Follow these steps to install the project dependencies:
+
+   Step 1: Open your Terminal (Mac/Linux) or Command Prompt/PowerShell (Windows).
+
+   Step 2: Navigate to the project directory where you saved the files.
+           Example: cd C:\Users\YourName\Desktop\spms
+
+   Step 3: Install the required packages.
+           Run the following command:
+           npm install
+
+           * This will read the 'package.json' file and download React, Vite, 
+             TypeScript, Tailwind CSS, Recharts, and other tools into a 
+             'node_modules' folder.
+
+
+3. RUNNING THE APPLICATION (LOCAL HOST)
+--------------------------------------------------------------------------------
+To start the development server and view the app in your browser:
+
+   Step 1: In the same terminal inside the project folder, run:
+           npm run dev
+
+   Step 2: You should see output similar to this:
+           
+             VITE v5.1.4  ready in 345 ms
+
+             ➜  Local:   http://localhost:5173/
+             ➜  Network: use --host to expose
+
+   Step 3: Open your web browser (Chrome, Edge, Firefox) and go to:
+           http://localhost:5173
+
+   * The app supports Hot Module Replacement (HMR). Changes you make to the code 
+     will update the browser instantly without reloading.
+
+
+4. BUILDING FOR PRODUCTION (OPTIONAL)
+--------------------------------------------------------------------------------
+If you want to create a production-ready build (optimized minified files):
+
+   Step 1: Run the build command:
+           npm run build
+
+   Step 2: The output will be generated in a 'dist' folder. You can preview it with:
+           npm run preview
+
+
+5. REQUIRED DEPENDENCIES (Already defined in package.json)
+--------------------------------------------------------------------------------
+The 'npm install' command installs these automatically. Here is what they do:
+
+   Core Framework:
+   - react
+   - react-dom
+
+   Build Tooling:
+   - vite
+   - @vitejs/plugin-react
+   - typescript
+
+   Styling:
+   - tailwindcss
+   - postcss
+   - autoprefixer
+
+   Data Visualization:
+   - recharts (Used for the charts in dashboards)
+
+   Utilities:
+   - lucide-react (Icon pack)
+
+
+6. TROUBLESHOOTING
+--------------------------------------------------------------------------------
+   Issue: "npm is not recognized as an internal or external command"
+   Fix:   Ensure Node.js is installed and added to your system's PATH variable.
+          Restart your computer after installing Node.js.
+
+   Issue: "Port 5173 is already in use"
+   Fix:   Vite will automatically try the next available port (e.g., 5174). 
+          Check the terminal output for the correct URL.
