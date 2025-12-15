@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { User, UserRole } from './types';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
@@ -20,6 +20,11 @@ const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
   const [currentView, setCurrentView] = useState('dashboard');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // Log system start/refresh
+  useEffect(() => {
+    addLog('SYSTEM', 'SYSTEM_START', 'Application loaded or refreshed');
+  }, []);
 
   const handleLogin = (loggedInUser: User) => {
     setUser(loggedInUser);
